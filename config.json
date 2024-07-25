@@ -1,0 +1,19 @@
+{
+ "params":
+{
+ "local_server": "True",
+  "local_uri":"mysql+mysqlconnector://root:@localhost/Tech_hand",
+  "prod_uri": "mysql+mysqlconnector://root:@localhost/Tech_hand",
+  "fb_url": "https://facebook.com/tech_hand",
+ "tw_url": "https://twitter.com/tech_hand",
+ "gh_url": "https://github.com/tech_hand",
+ "blog_name": "Tech_hand",
+ "tag_line": "A Blog by programmers for programmers",
+ "mail_username" :"anuj.sharma.cs.02@gmail.com",
+ "mail_password" : "xrbx dzxh yqwm plpg",
+ "No_blog": 3,
+ "admin_user": "anuj.sharma.cs.02@gmail.com",
+ "admin_password": "Anujsharma02",
+ "upload_location": "C:\\Users\\anujs\\PycharmProjects\\flask_tut\\.venv\\static\\assets\\img"
+}
+}
