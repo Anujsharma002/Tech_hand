@@ -188,4 +188,3 @@ def post():
     posts = Posts.query.first_or_404()
     return render_template('post.html',params = params,posts = posts)
 
-app.run(debug=True)
