@@ -1,7 +1,7 @@
 import math
 import smtplib
 
-from flask import Flask,render_template ,request,session,redirect
+from flask import Flask,render_template ,request,session,redirect,flash
 from flask_sqlalchemy import SQLAlchemy
 from werkzeug.utils import secure_filename
 from sqlalchemy.sql import text
@@ -176,6 +176,7 @@ def contact():
         msg = Message(subject=f"query from {name} by {email}",sender = params['mail_username'],recipients=[params['mail_username']])
         msg.body = message
         mail.send(msg)
+        flash("sucessfully send","success")
 
     return render_template('contact.html',params = params)
 
@@ -188,3 +189,5 @@ def post():
     posts = Posts.query.first_or_404()
     return render_template('post.html',params = params,posts = posts)
 
+
+app.run(debug=True)
